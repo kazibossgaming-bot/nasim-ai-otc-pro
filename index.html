@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NASIM AI OTC PRO</title>
+<style>
+body{background:#0b1220;color:white;font-family:Arial;text-align:center;padding:20px}
+.card{background:#17243a;padding:22px;border-radius:18px;margin-top:25px}
+select,button{width:100%;padding:14px;margin-top:12px;border:0;border-radius:10px;font-size:16px}
+button{background:#16a34a;color:white;font-weight:bold}
+#signal{font-size:36px;margin:25px;color:#facc15;font-weight:bold}
+</style>
+</head>
+<body>
+<h1>NASIM AI OTC PRO</h1>
+<p>OTC SIGNAL ANALYZER</p>
+<div class="card">
+<h3>Select OTC Pair</h3>
+<select id="pair">
+<option>EUR/USD OTC</option>
+<option>GBP/USD OTC</option>
+<option>USD/JPY OTC</option>
+<option>AUD/USD OTC</option>
+<option>USD/CAD OTC</option>
+</select>
+<p>Timeframe: 1 Minute</p>
+<div id="signal">WAIT</div>
+<button onclick="analyze()">ANALYZE</button>
+<p id="status">Demo Dashboard</p>
+</div>
+<script>
+function analyze(){
+document.getElementById("signal").innerText="WAIT";
+document.getElementById("status").innerText=
+"Live market connection not configured";
+}
+</script>
+</body>
+</html>
